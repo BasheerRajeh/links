@@ -103,8 +103,14 @@ export default function RootLayout({
             className={cn(inter.variable, 'scroll-smooth')}
             suppressHydrationWarning
         >
-            <body className='font-default'>
-                <Providers>{children}</Providers>
+            <body className='relative bg-white font-default dark:bg-black'>
+                <Providers>
+                    <div className='absolute inset-0 -z-20 h-[80vh] bg-grid'>
+                        <div className='h-[80vh] bg-gradiant'>
+                            <div className='h-screen'>{children}</div>
+                        </div>
+                    </div>
+                </Providers>
             </body>
         </html>
     )

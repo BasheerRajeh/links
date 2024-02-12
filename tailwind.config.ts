@@ -77,6 +77,11 @@ export default {
                 'accordion-down': 'accordion-down 0.2s ease-out',
                 'accordion-up': 'accordion-up 0.2s ease-out',
             },
+            backgroundImage: {
+                grid: "url('/images/grid.svg')",
+                gradiant:
+                    'linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%)',
+            },
         },
     },
     plugins: [typography, animate],
