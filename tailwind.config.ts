@@ -81,6 +81,8 @@ export default {
                 grid: "url('/images/grid.svg')",
                 gradiant:
                     'linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%)',
+                'gradiant-rev':
+                    'linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%)',
             },
         },
     },
