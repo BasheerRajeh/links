@@ -5,6 +5,7 @@ import '../public/styles/globals.css'
 import { site } from '@/config/site'
 import { cn } from '@/lib/utils'
 import Providers from '@/providers'
+import Analytics from '@/services/analytics'
 
 const inter = Inter({
     variable: '--font-inter',
@@ -111,6 +112,7 @@ export default function RootLayout({
                         </div>
                     </div>
                 </Providers>
+                <Analytics />
             </body>
         </html>
     )
