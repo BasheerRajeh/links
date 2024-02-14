@@ -7,6 +7,7 @@ import { cn } from '@/lib/utils'
 import Providers from '@/providers'
 import Analytics from '@/services/analytics'
 
+import Footer from './footer'
 import Header from './header'
 
 const inter = Inter({
@@ -108,17 +109,16 @@ export default function RootLayout({
         >
             <body className='relative bg-white font-default dark:bg-black'>
                 <Providers>
-                    <div className='absolute inset-0 -z-20 h-[80vh] bg-grid'>
-                        <div className='h-[80vh] bg-gradiant dark:bg-gradiant-dark'>
-                            <div className='h-screen'>
-                                <main className='relative mx-auto max-w-lg px-4'>
-                                    <Header />
-                                    {children}
-                                </main>
-                            </div>
-                        </div>
+                    <div className='absolute inset-0 -z-20 h-[80vh] bg-grid' />
+                    <div className='absolute inset-0 -z-10 h-[80vh] bg-gradiant dark:bg-gradiant-dark' />
+                    <div className='min-h-screen overflow-x-hidden'>
+                        <main className='relative mx-auto max-w-lg px-4'>
+                            <Header />
+                            {children}
+                        </main>
                     </div>
                 </Providers>
+                <Footer />
                 <Analytics />
             </body>
         </html>
