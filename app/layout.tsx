@@ -107,7 +107,7 @@ export default function RootLayout({
             <body className='relative bg-white font-default dark:bg-black'>
                 <Providers>
                     <div className='absolute inset-0 -z-20 h-[80vh] bg-grid'>
-                        <div className='h-[80vh] bg-gradiant-rev dark:bg-gradiant'>
+                        <div className='h-[80vh] bg-gradiant dark:bg-gradiant-dark'>
                             <div className='h-screen'>
                                 <main className='relative mx-auto max-w-lg px-4'>
                                     {children}

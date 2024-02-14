@@ -79,10 +79,10 @@ export default {
             },
             backgroundImage: {
                 grid: "url('/images/grid.svg')",
-                gradiant:
+                'gradiant-dark':
                     'linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%)',
-                'gradiant-rev':
-                    'linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%)',
+                gradiant:
+                    'linear-gradient(0deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 100%)',
             },
         },
     },
