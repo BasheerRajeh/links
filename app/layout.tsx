@@ -7,6 +7,8 @@ import { cn } from '@/lib/utils'
 import Providers from '@/providers'
 import Analytics from '@/services/analytics'
 
+import Header from './header'
+
 const inter = Inter({
     variable: '--font-inter',
     subsets: ['latin'],
@@ -110,6 +112,7 @@ export default function RootLayout({
                         <div className='h-[80vh] bg-gradiant dark:bg-gradiant-dark'>
                             <div className='h-screen'>
                                 <main className='relative mx-auto max-w-lg px-4'>
+                                    <Header />
                                     {children}
                                 </main>
                             </div>
