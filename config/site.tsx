@@ -1,4 +1,12 @@
 import { IconDescriptor } from 'next/dist/lib/metadata/types/metadata-types'
+import React from 'react'
+import {
+    SiFacebook,
+    SiGithub,
+    SiLinkedin,
+    SiTelegram,
+    SiX,
+} from 'react-icons/si'
 
 type Site = {
     url: string
@@ -8,6 +16,12 @@ type Site = {
     titleTemplate: string
     description: string
     favicons: IconDescriptor[]
+}
+
+export type LinkType = {
+    url: string
+    title: string
+    icon: React.ReactNode
 }
 
 export const site: Site = {
@@ -42,3 +56,31 @@ export const site: Site = {
         },
     ],
 }
+
+export const links: LinkType[] = [
+    {
+        url: 'https://facebook.com/MuhammadBasheerRajeh',
+        title: 'Facebook',
+        icon: <SiFacebook className='h-6 w-6' />,
+    },
+    {
+        url: 'https://www.linkedin.com/in/muhammad-basheer-rajeh/',
+        title: 'Linkedin',
+        icon: <SiLinkedin className='h-6 w-6' />,
+    },
+    {
+        url: 'https://t.me/basheer_rajeh',
+        title: 'Telegram',
+        icon: <SiTelegram className='h-6 w-6' />,
+    },
+    {
+        url: 'https://github.com/BasheerRajeh',
+        title: 'Github',
+        icon: <SiGithub className='h-6 w-6 ' />,
+    },
+    {
+        url: 'https://twitter.com/BashirRajeh',
+        title: 'Twitter',
+        icon: <SiX className='h-6 w-6 ' />,
+    },
+]

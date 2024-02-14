@@ -108,7 +108,11 @@ export default function RootLayout({
                 <Providers>
                     <div className='absolute inset-0 -z-20 h-[80vh] bg-grid'>
                         <div className='h-[80vh] bg-gradiant-rev dark:bg-gradiant'>
-                            <div className='h-screen'>{children}</div>
+                            <div className='h-screen'>
+                                <main className='relative mx-auto max-w-lg px-4'>
+                                    {children}
+                                </main>
+                            </div>
                         </div>
                     </div>
                 </Providers>
