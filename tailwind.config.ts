@@ -72,10 +72,45 @@ export default {
                     from: { height: 'var(--radix-accordion-content-height)' },
                     to: { height: '0' },
                 },
+                'float-out': {
+                    to: {
+                        rotate: '360deg',
+                    },
+                },
+                rotate: {
+                    to: {
+                        transform: 'rotate(90deg)',
+                    },
+                },
+                flip: {
+                    to: {
+                        rotate: '360deg',
+                    },
+                },
+                wave: {
+                    // eslint-disable-next-line sonarjs/no-duplicate-string
+                    '0%': { transform: 'rotate(0.0deg)' },
+                    '10%': {
+                        transform: 'rotate(14.0deg)',
+                    } /* The following five values can be played with to make the waving more or less extreme */,
+                    '20%': { transform: 'rotate(-8.0deg)' },
+                    '30%': { transform: 'rotate(14.0deg)' },
+                    '40%': { transform: 'rotate(-4.0deg)' },
+                    '50%': { transform: 'rotate(10.0deg)' },
+                    '60%': {
+                        transform: 'rotate(0.0deg)',
+                    } /* Reset for the last half to pause */,
+                    '100%': { transform: 'rotate(0.0deg)' },
+                },
             },
             animation: {
                 'accordion-down': 'accordion-down 0.2s ease-out',
                 'accordion-up': 'accordion-up 0.2s ease-out',
+                'float-out':
+                    'float-out calc(var(--duration, 1) * 1s) calc(var(--delay) * -1s) infinite linear',
+                rotate: 'rotate var(--spark) linear infinite both',
+                flip: 'flip calc(var(--spark) * 2) infinite steps(2, end)',
+                wave: 'wave infinite ease-in-out',
             },
             backgroundImage: {
                 grid: "url('/images/grid.svg')",

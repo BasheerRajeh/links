@@ -21,8 +21,8 @@ type Site = {
 
 export type LinkType = {
     url: string
-    title: string
-    icon: React.ReactNode
+    title: string | React.ReactNode
+    icon?: React.ReactNode
 }
 
 export const site: Site = {
