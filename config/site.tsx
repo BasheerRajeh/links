@@ -5,6 +5,7 @@ import {
     SiGithub,
     SiLinkedin,
     SiTelegram,
+    SiWhatsapp,
     SiX,
 } from 'react-icons/si'
 
@@ -82,5 +83,10 @@ export const links: LinkType[] = [
         url: 'https://twitter.com/BashirRajeh',
         title: 'Twitter',
         icon: <SiX className='h-6 w-6 ' />,
+    },
+    {
+        url: 'https://wa.me/+971583060558',
+        title: 'Whatsapp',
+        icon: <SiWhatsapp className='h-6 w-6' />,
     },
 ]
