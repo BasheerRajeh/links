@@ -14,6 +14,8 @@ const Header = () => {
                 priority
                 draggable='false'
             />
+            <h1 className='text-xl font-semibold'>Muhammad Basheer Rajeh</h1>
+            <p className='text-foreground/70'>Full-stack Web Developer</p>
         </header>
     )
 }
