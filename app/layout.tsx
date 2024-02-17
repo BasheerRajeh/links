@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 
-import '../public/styles/globals.css'
+import '@/public/styles/globals.css'
 import { site } from '@/config/site'
 import { cn } from '@/lib/utils'
 import Providers from '@/providers'
