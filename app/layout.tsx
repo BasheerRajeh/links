@@ -16,6 +16,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+    metadataBase: new URL(site.url),
     title: {
         default: site.title,
         template: `%s ${site.titleTemplate}`,
@@ -37,9 +38,20 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         site: 'BasheerRajeh',
         creator: 'BasheerRajeh',
-        images: [`${site.url}/images/og.png`],
+        images: [
+            {
+                url: `${site.url}/images/og.png`,
+                width: 1200,
+                height: 675,
+                alt: site.description,
+            },
+        ],
+    },
+    alternates: {
+        canonical: site.url,
     },
     keywords: site.keywords,
+    creator: 'BasheerRajeh',
     openGraph: {
         url: `${site.url}`,
         type: 'website',
@@ -51,7 +63,7 @@ export const metadata: Metadata = {
             {
                 url: `${site.url}/images/og.png`,
                 width: 1200,
-                height: 630,
+                height: 675,
                 alt: site.description,
                 type: 'image/png',
             },

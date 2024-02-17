@@ -28,9 +28,9 @@ export type LinkType = {
 export const site: Site = {
     url:
         process.env.NODE_ENV === 'production'
-            ? 'rajeh-links.vercel.app'
+            ? 'http://rajeh-links.vercel.app'
             : 'http://localhost:3000',
-    title: 'Links',
+    title: 'Links | Rajeh - A Full Stack Developer',
     name: 'Rajeh',
     keywords: [
         'Rajeh',
